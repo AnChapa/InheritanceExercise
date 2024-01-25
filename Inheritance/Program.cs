@@ -28,12 +28,39 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Console.WriteLine("Bird:\n-------------------------------");
+            Bird borb = new Bird()
+            {
+                Species = "American Robin",
+                Legs = 2,
+                Tail = true,
+                Color = "Brownish-gray upperparts, orange-red breast",
+                Wingspan = 14,
+                NestType = "cup shaped",
+                BeakShape = "thin and pointed",
+                Migratory = true
+            };
+            borb.DisplayInfoBird();
 
+            Console.WriteLine();
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Console.WriteLine("Reptile:\n-------------------------------");
+            Reptile beard = new Reptile()
+            {
+                Species = "Bearded Dragon",
+                Legs = 4,
+                Tail = true,
+                Color = "Various colors, including shades of brown, tan, red, and yellow",
+                Habitat = "deserts and woodlands",
+                ColdBlooded = true,
+                Diet = "Omnivorous",
+                EggLaying = true
+            };
+            beard.DisplayInfoRep();
         }
     }
 }
